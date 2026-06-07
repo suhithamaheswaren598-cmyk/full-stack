@@ -1,26 +1,32 @@
 import Counter from "./components/Counter"
+import Effect from "./components/Effect"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Parent from "./pages/Parent"
 import Services from "./pages/Services"
-
-const App = ()=>{
+import { Routes, Route } from 'react-router-dom'
+const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <h1>hello world!!</h1>
-      <h1>hello world!!</h1>
-      <Home />
-      <Contact />
-      <Services />
-      <About />
-      <Parent />
-      <Counter />
-    </div>
-    
-  )
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/parent' element={<Parent/>}/>
+        <Route path='/useState' element={<Counter/>}/>
+        <Route path='/useEffect' element={<Effect/>}/>
+      </Routes>
+      </>
+)
 }
+
+      
+    
+  
+
 
 export default App
