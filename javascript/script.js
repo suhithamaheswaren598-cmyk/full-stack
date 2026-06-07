@@ -285,17 +285,17 @@
 // var result = arr.map((val) => (val*2));
 // console.log(result)
 // console.log(arr);
-var arr =[1,2,3,4,5]
+// var arr =[1,2,3,4,5]
 
-var even = arr.filter((val)=>val%2===0);
-console.log(even)
+// var even = arr.filter((val)=>val%2===0);
+// console.log(even)
 
-var sum = arr.reduce((add,val)=>(add+val),0);
-console.log(sum);
+// var sum = arr.reduce((add,val)=>(add+val),0);
+// console.log(sum);
 
-var userNmae = {
+var userName = {
     name:"suhitha",
-    dept;["ct","aids"],
+    dept:["ct","aids"],
     skills:{
         programming:["java","c"]
     }
